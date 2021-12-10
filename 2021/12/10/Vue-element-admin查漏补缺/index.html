@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="iam_Echo">
+    
+    <title>
+        
+            Vue-element-admin查漏补缺 |
+        
+        终有沧海替弱水
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"yousite.com","root":"/","language":"en"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.jpg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.jpg","description":"Perseverance can sometimes equal genius in its results"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.3"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                终有沧海替弱水
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                ABOUT
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">ABOUT</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">Vue-element-admin查漏补缺</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">iam_Echo</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2021-12-10 09:37:00
+    </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>5.8k Words</span>
+        </span>
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h2 id="关于Vue-element-admin的补充"><a href="#关于Vue-element-admin的补充" class="headerlink" title="关于Vue-element-admin的补充"></a>关于Vue-element-admin的补充</h2><h3 id="关于tagView的使用"><a href="#关于tagView的使用" class="headerlink" title="关于tagView的使用"></a>关于tagView的使用</h3><ul>
+<li>首先接触到这个是因为，我想用纯净版的<code>Vue-element-template</code>来进行开发，但是忽然发现，我们的项目需要一个tagView，而纯净版是没有tagView的，我尝试了很多办法去把tagView加入到<code>template</code>版本中，但是尝试后都已失败而告终，最后我选择换个方式，我用admin开发，来看看到底tagView是如何做到的。</li>
+<li>当我用了admin的完整版代码后，我需要满足一个需求就是，简单的登录，并不需要权限等一系列操作，只需要验证登录即可，然后我将Vuex中的代码进行了整理，也将premisson的代码进行了修改，也将动态路由进行了删除，这时发现，siderbar中的路由变成了空白。</li>
+<li>后来经过查询资料，是因为store中有一个premisson文件来控制这个route，只有通过了权限验证的动态路由才可以正常被加载，才可以在route和tagView中展示。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@/layout/components/Siderbar/index.vue</span><br><span class="line">&lt;sidebar-item</span><br><span class="line">          v-for=&quot;route in routes&quot;</span><br><span class="line">          :key=&quot;route.path&quot;</span><br><span class="line">          :item=&quot;route&quot;</span><br><span class="line">          :base-path=&quot;route.path&quot;</span><br><span class="line">/&gt;</span><br><span class="line">// 这里就是获取 初始化路由配置  因为没有了动态路由 所以这里要获取的本身原始的路由参数</span><br><span class="line"> routes() &#123;</span><br><span class="line">      return this.$router.options.routes;</span><br><span class="line"> &#125;,</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">@/layout/components/tagView/index.vue</span><br><span class="line">// 属性监听 </span><br><span class="line">  computed: &#123;</span><br><span class="line">    routes() &#123;</span><br><span class="line">      //   拿到初始化时的配置的路由规则</span><br><span class="line">      return this.$router.options.routes</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;</span><br><span class="line">// 过滤固定的标签</span><br><span class="line">    filterAffixTags(routes, basePath = &#x27;/&#x27;) &#123;</span><br><span class="line">      let tags = []</span><br><span class="line">      //  这里本来是权限验证过后的动态路由</span><br><span class="line">      //  因为我将动态路由权限取消了  所以这里全部都是初始化的路由配置</span><br><span class="line">      //  在上面的属性监视中 我已经监听了初始路由的配置</span><br><span class="line">      //  这里就是将所有的路由进行遍历循环 并且拿到tag的值 展示在tagView中</span><br><span class="line">      //  首先判断是否有meta 就是标题和icon以及是否固定</span><br><span class="line">      //  如果固定是存在的 那么 这个tag将永远存在于tagView这个组件中 不会消失</span><br><span class="line">      //  这个组件的核心之处就是 这个方法最后返回的tag数组的值</span><br><span class="line"></span><br><span class="line">      //  后面需要判断这个路由是否包含着子路由  就是为了断定用户点的是父级根目录的时候 该如何显示</span><br><span class="line">      //  一样 需要用这个过滤方法 将子路由和路径进行判断 然后再判断是否要固定在tagView中</span><br><span class="line">      //  如果 tempTags的长度是存在的 那么 就要将tag变成二维数组了</span><br><span class="line">      routes.forEach((route) =&gt; &#123;</span><br><span class="line">        if (route.meta &amp;&amp; route.meta.affix) &#123;</span><br><span class="line">          const tagPath = path.resolve(basePath, route.path)</span><br><span class="line">          tags.push(&#123;</span><br><span class="line">            fullPath: tagPath,</span><br><span class="line">            path: tagPath,</span><br><span class="line">            name: route.name,</span><br><span class="line">            meta: &#123; ...route.meta &#125;,</span><br><span class="line">          &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">        if (route.children) &#123;</span><br><span class="line">          const tempTags = this.filterAffixTags(route.children, route.path)</span><br><span class="line">          if (tempTags.length &gt;= 1) &#123;</span><br><span class="line">            tags = [...tags, ...tempTags]</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;)</span><br><span class="line">      console.log(&#x27;tags&#x27;)</span><br><span class="line">      console.log(tags)</span><br><span class="line">      return tags</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>之所以发现这个<code>bug</code>是因为，我每次调试完刷新页面时会发现，<code>tagView</code>组件中间是空白的，可是我是有设置过某个标签的<code>affix</code>为<code>true</code>的，然后经过调试，应该是这个方法<code>filterAffixTags</code>里面进行过滤的时候过滤的是之前权限验证之后的路由，控制台并找不到<code>premisson_routes</code>，所以注意这点。</p>
+</li>
+<li><p>这里这个<code>tagView</code>设计到的方法特别多，也涉及到了很多新的知识点，无法挨个进行展开讲解，只能是以代码注释的方式进行。<code>tagView</code>组件整体函数结构环环相扣，组件嵌套组件，父子组件传值，事件监听，事件监听的移除，以及并行调用<code>Vuex</code>进行<code>tagView</code>的控制，和内部的逻辑 需要慢慢的理解。</p>
+</li>
+<li><p>在这个组件中用到了很多原生的<code>html</code>方法，例如<code>滚轮事件</code>，<code>右键点击事件</code>等等，都要多去看文档才能明白这些方法的使用过程以及其中的细节。</p>
+<h3 id="tagView的Vuex分析"><a href="#tagView的Vuex分析" class="headerlink" title="tagView的Vuex分析"></a>tagView的Vuex分析</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@/store/modules/tagsViews.js</span><br></pre></td></tr></table></figure></li>
+<li><p>对于状态控制来说，我们要控制的只有<code>visitedViews</code>和<code>cacheViews</code>这两个状态，也就是看过的tag和需要缓存的tag两个。</p>
+</li>
+<li><p>对于<code>mutations</code>事件方法来说，细分为：<code>ADD_VISITED_VIEW</code>、<code>ADD_CACHED_VIEW</code>、<code>DEL_VISITED_VIEW</code>、<code>DEL_CACHED_VIEW</code>、<code>DEL_OTHERS_VISITED_VIEWS</code>、<code>DEL_OTHERS_CACHED_VIEWS</code>、<code>DEL_ALL_VISITED_VIEWS</code>、<code>DEL_ALL_CACHED_VIEWS</code>、<code>UPDATE_VISITED_VIEW</code>，具体的会在下面的代码中进行展示。</p>
+</li>
+<li><p>对于<code>action</code>行为方法来说，细分为：<code>addView</code>、<code>addVisitedView</code>、<code>addCachedView</code>、<code>delView</code>、<code>delVisitedView</code>、<code>delCachedView</code>、<code>delOthersViews</code>、等等方法</p>
+</li>
+<li><p>这里会进行一系列的异步操作，并且通过提交 mutation 来记录 action 产生的副作用（即状态的变更）</p>
+</li>
+</ul>
+<h4 id="ES6的语法和知识点"><a href="#ES6的语法和知识点" class="headerlink" title="ES6的语法和知识点"></a>ES6的语法和知识点</h4><ul>
+<li><p><a class="link" target="_blank" rel="noopener" href="https://www.jianshu.com/p/d5f572dd3776">Object.assign()<i class="fas fa-external-link-alt"></i></a> 方法用于将所有可枚举属性的值从一个或多个源对象分配到目标对象</p>
+</li>
+<li><p><code>Object.assign</code>方法的第一个参数是目标对象，后面的参数都是源对象</p>
+</li>
+<li><p>注意，如果目标对象与源对象有同名属性，或多个源对象有同名属性，则后面的属性会覆盖前面的属性</p>
+</li>
+<li><p>如果只有一个参数，<code>Object.assign</code>会直接返回该参数。</p>
+</li>
+<li><p>如果该参数不是对象，则会先转成对象，然后返回</p>
+</li>
+<li><p>只有字符串的包装对象，会产生可枚举属性，其他类型的不会产生对象只会返回一个值</p>
+</li>
+<li><p><code>Object.assign</code>方法实行的是浅拷贝，而不是深拷贝</p>
+</li>
+<li><p>对于这种嵌套的对象，一旦遇到同名属性，<code>Object.assign</code>的处理方法是替换，而不是添加</p>
+</li>
+<li><p><code>Object.assign</code>可以用来处理数组，但是会把数组视为对象。</p>
+<p>常见的一些用法：</p>
+<ul>
+<li>为对象添加属性</li>
+<li>为对象添加方法</li>
+<li>克隆对象</li>
+<li>合并多个对象</li>
+<li>为属性指定默认值</li>
+</ul>
+</li>
+</ul>
+<h4 id="变量解构赋值："><a href="#变量解构赋值：" class="headerlink" title="变量解构赋值："></a>变量解构赋值：</h4><p>​        Vuex 中 使用 Action 处理异步请求时，常规写法如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">getMenuAction:<span class="function">(<span class="params">context</span>) =&gt;</span>&#123;</span><br><span class="line">         context.commit(<span class="string">&#x27;SET_MENU_LIST&#x27;</span>,[<span class="string">&#x27;承保2&#x27;</span>,<span class="string">&#x27;核保2&#x27;</span>])</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>　　我们也可以使用如下简化写法，如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">actions:&#123;</span><br><span class="line">     <span class="attr">getMenuAction</span>:<span class="function">(<span class="params">&#123;commit&#125;</span>) =&gt;</span>&#123;</span><br><span class="line">         commit(<span class="string">&#x27;SET_MENU_LIST&#x27;</span>,[<span class="string">&#x27;承保2&#x27;</span>,<span class="string">&#x27;核保2&#x27;</span>])</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>​        常规写法中的context：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">context = &#123;　　 </span><br><span class="line">						 <span class="attr">dispatch</span>: local.dispatch,</span><br><span class="line">　　　　　　　　　　　　　　   <span class="attr">commit</span>: local.commit,</span><br><span class="line">　　　　　　　　　　　　　　　　<span class="attr">getters</span>: local.getters,</span><br><span class="line">　　　　　　　　　　　　　　　　<span class="attr">state</span>: local.state,</span><br><span class="line">　　　　　　　　　　　　　　　　<span class="attr">rootGetters</span>: store.getters,</span><br><span class="line">　　　　　　　　　　　　　　　　<span class="attr">rootState</span>: store.state                         </span><br><span class="line">　　　　　　　&#125;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+
+<p>​        由于解构赋值，那么<code>&#123;commit&#125;</code>就变成了context.commit，具体的解构赋值的讲解，可以仔细阅读一下<a class="link" target="_blank" rel="noopener" href="https://blog.csdn.net/qq_37618797/article/details/110038071">ES6的解构赋值<i class="fas fa-external-link-alt"></i></a></p>
+<p>​        这里放上store/tagsViews的代码，里面很详细的写了注释</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> state = &#123;</span><br><span class="line">    <span class="attr">visitedViews</span>: [],</span><br><span class="line">    <span class="attr">cachedViews</span>: []</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> mutations = &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: ADD_VISITED_VIEW</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 新增一个查看的tag页面</span></span><br><span class="line"><span class="comment">            这个方法需要传入一个状态 和一个正在查看的路由</span></span><br><span class="line"><span class="comment">            通过遍历所有路由判断 当前的路径和正在看的路径是否相同 </span></span><br><span class="line"><span class="comment">            如果是同一个页面 那么就停止 不会往下面走逻辑了 这个函数就停止了</span></span><br><span class="line"><span class="comment">            否则就进行拷贝并且push进正在看的数组中</span></span><br><span class="line"><span class="comment">            Object.assign() 方法用于将所有可枚举属性的值从一个或多个源对象分配到目标对象</span></span><br><span class="line"><span class="comment">            Object.assign方法的第一个参数是目标对象，后面的参数都是源对象</span></span><br><span class="line"><span class="comment">            注意，如果目标对象与源对象有同名属性，或多个源对象有同名属性，则后面的属性会覆盖前面的属性</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">            这里就是将view拷贝到新的空数组中，并且如果有title就写本身的title没有的话就赋值为&quot;no-name&quot;，这里是为了覆盖属性而创建的一个源对象</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="attr">ADD_VISITED_VIEW</span>: <span class="function">(<span class="params">state, view</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (state.visitedViews.some(<span class="function"><span class="params">v</span> =&gt;</span> v.path === view.path)) <span class="keyword">return</span></span><br><span class="line">        state.visitedViews.push(</span><br><span class="line">            <span class="built_in">Object</span>.assign(&#123;&#125;, view, &#123;</span><br><span class="line">                <span class="attr">title</span>: view.meta.title || <span class="string">&#x27;no-name&#x27;</span></span><br><span class="line">            &#125;)</span><br><span class="line">        )</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>:ADD_CACHED_VIEW</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>:这里是将tag加入缓存中</span></span><br><span class="line"><span class="comment">     * 判断 cacheViews中是否包含了这个view的名称 如果包含,那么就停止这个 不会在往下走逻辑了</span></span><br><span class="line"><span class="comment">     * 如果这个view没有被包含在缓存数组中,那么就需要判断,这个路由meta是否设置了不被缓存</span></span><br><span class="line"><span class="comment">     * noCache: true // 如果设置为true，则不会被 &lt;keep-alive&gt; 缓存(默认 false)</span></span><br><span class="line"><span class="comment">     * 也就是如果 默认是缓存的 那么取反也就是为真的时候 是需要我们将其缓存的 也就是需要将它push到cacheViews</span></span><br><span class="line"><span class="comment">     * 这里的noCache是需要自己去路由的配置界面去设置的</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="attr">ADD_CACHED_VIEW</span>: <span class="function">(<span class="params">state, view</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (state.cachedViews.includes(view.name)) <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">if</span> (!view.meta.noCache) &#123;</span><br><span class="line">            state.cachedViews.push(view.name)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: DEL_VISITED_VIEW</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里是清除看过的页面的方法</span></span><br><span class="line"><span class="comment">     * entries() 方法返回一个数组的迭代对象，该对象包含数组的键值对 (key/value)。</span></span><br><span class="line"><span class="comment">     * 这里的i是key值，v是value值</span></span><br><span class="line"><span class="comment">     * 如果其中某个值的路径 和 当前要删除的路径是相同 那么就进行删除操作</span></span><br><span class="line"><span class="comment">     * 这里在数组中将对应的值删掉 那么也就相当于 关闭了当前页面</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="attr">DEL_VISITED_VIEW</span>: <span class="function">(<span class="params">state, view</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> [i, v] <span class="keyword">of</span> state.visitedViews.entries()) &#123;</span><br><span class="line">            <span class="keyword">if</span> (v.path === view.path) &#123;</span><br><span class="line">                state.visitedViews.splice(i, <span class="number">1</span>)</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: DEL_CACHED_VIEW </span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里是清除被缓存的view  </span></span><br><span class="line"><span class="comment">     * 先判断这个view的name是否存在于cacheView数组中  </span></span><br><span class="line"><span class="comment">     * 如果存在的话 返回值就是第一次出现的位置 一定会大于-1 </span></span><br><span class="line"><span class="comment">     * 如果大于-1 就直接删除 index就是数组中的下标</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="attr">DEL_CACHED_VIEW</span>: <span class="function">(<span class="params">state, view</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> index = state.cachedViews.indexOf(view.name)</span><br><span class="line">        index &gt; -<span class="number">1</span> &amp;&amp; state.cachedViews.splice(index, <span class="number">1</span>)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: DEL_OTHERS_VISITED_VIEWS</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>:  这里是关闭其余tag的方法</span></span><br><span class="line"><span class="comment">     * 这个方法会遍历当前visitedViews数组中的，所有的元素</span></span><br><span class="line"><span class="comment">     * 只要这个元素的affix是true 又或者 是正在看的当前页面 那么就不删除</span></span><br><span class="line"><span class="comment">     * 这里是进行visitedViews数组的覆盖 而不是删除 因为要删除的大于要保留的</span></span><br><span class="line"><span class="comment">     * 所以选择直接删除 不如选择将有用的留在数组中</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">DEL_OTHERS_VISITED_VIEWS</span>: <span class="function">(<span class="params">state, view</span>) =&gt;</span> &#123;</span><br><span class="line">        state.visitedViews = state.visitedViews.filter(<span class="function"><span class="params">v</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> v.meta.affix || v.path === view.path</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: DEL_OTHERS_CACHED_VIEWS</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>:这里是要删除除去选中的tag以外所有的tag在缓存数组中 </span></span><br><span class="line"><span class="comment">     * 与上面的思路是一样的 首先判断 被选中的tag是否在缓存数组中</span></span><br><span class="line"><span class="comment">     * 如果存在的话 就让缓存数组只保留选中的即可</span></span><br><span class="line"><span class="comment">     * 这样这个tag就变成独立 没有keep-alive的页面可以让它返回了 </span></span><br><span class="line"><span class="comment">     * 如果要排除的这个tag 不在缓存中的话  那么就直接把缓存数组清空</span></span><br><span class="line"><span class="comment">     * 这里要区分 slice 和splice slice（）是用来截取元素的 </span></span><br><span class="line"><span class="comment">     * 从index开始 index+1结束 并且不包括index+1</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="attr">DEL_OTHERS_CACHED_VIEWS</span>: <span class="function">(<span class="params">state, view</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> index = state.cachedViews.indexOf(view.name)</span><br><span class="line">        <span class="keyword">if</span> (index &gt; -<span class="number">1</span>) &#123;</span><br><span class="line">            state.cachedViews = state.cachedViews.slice(index, index + <span class="number">1</span>)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// if index = -1, there is no cached tags</span></span><br><span class="line">            state.cachedViews = []</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: DEL_ALL_VISITED_VIEWS  </span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里应该对应的关闭所有的tag </span></span><br><span class="line"><span class="comment">     * 首先一定要注意 关闭所有 但是affix tag一定要保持 不可以被删除 </span></span><br><span class="line"><span class="comment">     * 那么就直接过滤 affix tag就实现功能了</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="attr">DEL_ALL_VISITED_VIEWS</span>: <span class="function"><span class="params">state</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// keep affix tags</span></span><br><span class="line">        <span class="keyword">const</span> affixTags = state.visitedViews.filter(<span class="function"><span class="params">tag</span> =&gt;</span> tag.meta.affix)</span><br><span class="line">        state.visitedViews = affixTags</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: DEL_ALL_CACHED_VIEWS</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里缓存数组的清空就直接赋值为空就可以了</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="attr">DEL_ALL_CACHED_VIEWS</span>: <span class="function"><span class="params">state</span> =&gt;</span> &#123;</span><br><span class="line">        state.cachedViews = []</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: UPDATE_VISITED_VIEW  （到指定目标的tag）</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里首先要遍历看过的tag中的每一个tag的路径 </span></span><br><span class="line"><span class="comment">     * 哪个与传来的tag的路径是相同 如果相同 、</span></span><br><span class="line"><span class="comment">     * 那么就让当前这个等于传来的View即可</span></span><br><span class="line"><span class="comment">     * 然后直接就可以跳出循环了 </span></span><br><span class="line"><span class="comment">     * 切记要跳出循环 不跳出循环 就会出大问题</span></span><br><span class="line"><span class="comment">     * 使用Object.assign这个方法 仅仅是为了将属性更新一下</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="attr">UPDATE_VISITED_VIEW</span>: <span class="function">(<span class="params">state, view</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> v <span class="keyword">of</span> state.visitedViews) &#123;</span><br><span class="line">            <span class="keyword">if</span> (v.path === view.path) &#123;</span><br><span class="line">                v = <span class="built_in">Object</span>.assign(v, view)</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> actions = &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: addView  （初始化tagView）</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 添加查看过tag页面 </span></span><br><span class="line"><span class="comment">     * 不仅要添加到浏览过的列表 还需要添加到缓存中</span></span><br><span class="line"><span class="comment">     * 因为默认是需要keep-alive来缓存</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">dispatch</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">view</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">addView</span>(<span class="params">&#123; dispatch &#125;, view</span>)</span> &#123;</span><br><span class="line">        dispatch(<span class="string">&#x27;addVisitedView&#x27;</span>, view)</span><br><span class="line">        dispatch(<span class="string">&#x27;addCachedView&#x27;</span>, view)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: addVisitedView （初始化用到的方法）</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 初始化tag时需要用到</span></span><br><span class="line"><span class="comment">     * 初始化tag时要确定 哪个是要固定在组件中 不可以移动的</span></span><br><span class="line"><span class="comment">     * 然后单独添加到这个列表中</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">commit</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">view</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">addVisitedView</span>(<span class="params">&#123; commit &#125;, view</span>)</span> &#123;</span><br><span class="line">        commit(<span class="string">&#x27;ADD_VISITED_VIEW&#x27;</span>, view)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: addCachedView （初始化用到的方法）</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里是将页面加入缓存数组的的方法 </span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">commit</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">view</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">addCachedView</span>(<span class="params">&#123; commit &#125;, view</span>)</span> &#123;</span><br><span class="line">        commit(<span class="string">&#x27;ADD_CACHED_VIEW&#x27;</span>, view)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: delView（关闭当前选中的tag）</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里对应的方法是 </span></span><br><span class="line"><span class="comment">     *  返回一个新的Promise</span></span><br><span class="line"><span class="comment">     *  并且执行 删除看过列表和缓存列表的方法</span></span><br><span class="line"><span class="comment">     *  然后将删除后的新数组 在赋值给全局 并且resolve出去</span></span><br><span class="line"><span class="comment">     *  这里很巧妙地就是 重新定义了方法 但是还是复用了其他的方法  将选中的标签删除</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">dispatch</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">state</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">view</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">delView</span>(<span class="params">&#123; dispatch, state &#125;, view</span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">            dispatch(<span class="string">&#x27;delVisitedView&#x27;</span>, view)</span><br><span class="line">            dispatch(<span class="string">&#x27;delCachedView&#x27;</span>, view)</span><br><span class="line">            resolve(&#123;</span><br><span class="line">                <span class="attr">visitedViews</span>: [...state.visitedViews],</span><br><span class="line">                <span class="attr">cachedViews</span>: [...state.cachedViews]</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: delVisitedView</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里是上面关闭当前选中的tag的方法的实现</span></span><br><span class="line"><span class="comment">     * 这里需要使用DEL_VISITED_VIEW 进行实现</span></span><br><span class="line"><span class="comment">     * 然后将删除的后数组再resolve出来 保证全局状态的改变</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">commit</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">state</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">view</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">delVisitedView</span>(<span class="params">&#123; commit, state &#125;, view</span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">            commit(<span class="string">&#x27;DEL_VISITED_VIEW&#x27;</span>, view)</span><br><span class="line">            resolve([...state.visitedViews])</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: delCachedView   （刷新当前tag）</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里直接调方法即可</span></span><br><span class="line"><span class="comment">     * 然后将删除后的数组 resolve出来即可</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">commit</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">state</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">view</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">delCachedView</span>(<span class="params">&#123; commit, state &#125;, view</span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">            commit(<span class="string">&#x27;DEL_CACHED_VIEW&#x27;</span>, view)</span><br><span class="line">            resolve([...state.cachedViews])</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: delOthersViews （除选中的tag全部删除）</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里思路同上面一样</span></span><br><span class="line"><span class="comment">     * 也是封装两个方法 调用上面不同的mutations即可</span></span><br><span class="line"><span class="comment">     * 最后函数结束将改变后的数组 resolve出来即可</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">dispatch</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">state</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">view</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">delOthersViews</span>(<span class="params">&#123; dispatch, state &#125;, view</span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">            dispatch(<span class="string">&#x27;delOthersVisitedViews&#x27;</span>, view)</span><br><span class="line">            dispatch(<span class="string">&#x27;delOthersCachedViews&#x27;</span>, view)</span><br><span class="line">            resolve(&#123;</span><br><span class="line">                <span class="attr">visitedViews</span>: [...state.visitedViews],</span><br><span class="line">                <span class="attr">cachedViews</span>: [...state.cachedViews]</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: delOthersVisitedViews （删除除选中之外的所有）</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 调用DEL_OTHERS_VISITED_VIEWS方法</span></span><br><span class="line"><span class="comment">     * 删除成功之后 将剩余的参数 全部resolve出来即可</span></span><br><span class="line"><span class="comment">     * 逻辑在DEL_OTHERS_VISITED_VIEWS方法中写着</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">commit</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">state</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">view</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">delOthersVisitedViews</span>(<span class="params">&#123; commit, state &#125;, view</span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">            commit(<span class="string">&#x27;DEL_OTHERS_VISITED_VIEWS&#x27;</span>, view)</span><br><span class="line">            resolve([...state.visitedViews])</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: delOthersCachedViews （删除除选中之外的tag 在缓存中）</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 调用DEL_OTHERS_CACHED_VIEWS方法即可</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">commit</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">state</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">view</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">delOthersCachedViews</span>(<span class="params">&#123; commit, state &#125;, view</span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">            commit(<span class="string">&#x27;DEL_OTHERS_CACHED_VIEWS&#x27;</span>, view)</span><br><span class="line">            resolve([...state.cachedViews])</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: delAllViews</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里是关闭所有tag标签的方法</span></span><br><span class="line"><span class="comment">     * 由于需要删除缓存和已读这两个数组 所以也是分开两个方法写</span></span><br><span class="line"><span class="comment">     * 这里总体异步调用 然后方法写在这个方法外面</span></span><br><span class="line"><span class="comment">     * 最后再resolve出去 </span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">dispatch</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">state</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">view</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">delAllViews</span>(<span class="params">&#123; dispatch, state &#125;, view</span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">            dispatch(<span class="string">&#x27;delAllVisitedViews&#x27;</span>, view)</span><br><span class="line">            dispatch(<span class="string">&#x27;delAllCachedViews&#x27;</span>, view)</span><br><span class="line">            resolve(&#123;</span><br><span class="line">                <span class="attr">visitedViews</span>: [...state.visitedViews],</span><br><span class="line">                <span class="attr">cachedViews</span>: [...state.cachedViews]</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: delAllVisitedViews</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 调用DEL_ALL_VISITED_VIEWS 将所有的tag全部删除</span></span><br><span class="line"><span class="comment">     * 当状态改变之后 再将改变后的状态 resolve出去</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">commit</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">state</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">delAllVisitedViews</span>(<span class="params">&#123; commit, state &#125;</span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">            commit(<span class="string">&#x27;DEL_ALL_VISITED_VIEWS&#x27;</span>)</span><br><span class="line">            resolve([...state.visitedViews])</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: delAllCachedViews</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 调用 DEL_ALL_CACHED_VIEWS 将所有的tag从缓存数组中全部删除</span></span><br><span class="line"><span class="comment">     * 当状态改变之后 再将改变后的状态 resolve出去</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">commit</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">state</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">delAllCachedViews</span>(<span class="params">&#123; commit, state &#125;</span>)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">            commit(<span class="string">&#x27;DEL_ALL_CACHED_VIEWS&#x27;</span>)</span><br><span class="line">            resolve([...state.cachedViews])</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@name</span>: updateVisitedView</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@msg</span>: 这里应该是更新路径的方法</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">commit</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param <span class="type">&#123;*&#125;</span> <span class="variable">view</span></span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return <span class="type">&#123;*&#125;</span></span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="title">updateVisitedView</span>(<span class="params">&#123; commit &#125;, view</span>)</span> &#123;</span><br><span class="line">        commit(<span class="string">&#x27;UPDATE_VISITED_VIEW&#x27;</span>, view)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    <span class="attr">namespaced</span>: <span class="literal">true</span>,</span><br><span class="line">    state,</span><br><span class="line">    mutations,</span><br><span class="line">    actions</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="样式更改"><a href="#样式更改" class="headerlink" title="样式更改"></a>样式更改</h2><h3 id="全局样式修改"><a href="#全局样式修改" class="headerlink" title="全局样式修改"></a>全局样式修改</h3><ul>
+<li><p>做了一个项目要重构后台管理系统，做一个场站级别的监控系统，为了方便路由等跳转，就使用了这个项目进行改造</p>
+</li>
+<li><p>因为项目中存在很多的表单和输入框以及弹出框等，为了保证与项目主题相同，所以需要对这些底层框架的样式进行修改，这里有两种修改办法:修改styles文件夹下的<code>element-ui.scss</code>文件或者写入<code>app.vue</code>，<strong>这里要注意</strong>：不可以在style标签上加入scoped，否则会生效失败。</p>
+</li>
+<li><p>我对element-ui的修改都写入了SCSS文件，部分是写入了组件，然后给组件去掉了scoped，或者如果是全局使用的例如全局div等，都可以写入app.vue中挂载起来。</p>
+</li>
+<li><p>因为全局安装了scssLoader加载器，所以再style文件夹下的scss文件会在项目启动时被渲染，所以这个文件夹下的所有scss文件都是全局样式文件，只是按照不同的维度进行了样式拆分。</p>
+</li>
+<li><p>这里要注意，全局修改的样式之后，所有的项目里使用到的样式都会跟随发生变化，也就是说，所有的表单、弹出框和div的滑块都会发生相同的变化，渲染同样的css样式。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@/styles/element-ui.scss</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">//<span class="selector-tag">table</span>的样式</span><br><span class="line"><span class="selector-class">.el-table</span> <span class="selector-tag">tr</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent <span class="meta">!important</span>; // <span class="selector-tag">tr</span>行透明</span><br><span class="line">&#125;</span><br><span class="line">//整体透明</span><br><span class="line"><span class="selector-class">.el-table</span>,</span><br><span class="line"><span class="selector-class">.el-table__expanded-cell</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent;</span><br><span class="line">&#125;</span><br><span class="line">// 每一行的每一个单元格透明</span><br><span class="line"><span class="selector-class">.el-table--enable-row-transition</span> <span class="selector-class">.el-table__body</span> <span class="selector-tag">td</span>,</span><br><span class="line"><span class="selector-class">.el-table</span> <span class="selector-class">.cell</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent;</span><br><span class="line">&#125;</span><br><span class="line">// <span class="selector-tag">table</span>每一行被hover时没有背景颜色</span><br><span class="line"><span class="selector-class">.el-table--enable-row-hover</span> <span class="selector-class">.el-table__body</span> <span class="selector-tag">tr</span><span class="selector-pseudo">:hover</span> &gt; <span class="selector-tag">td</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br><span class="line">// 去掉<span class="selector-tag">table</span>的框线</span><br><span class="line"><span class="selector-tag">table</span> <span class="selector-tag">th</span>,</span><br><span class="line"><span class="selector-tag">table</span> <span class="selector-tag">td</span> &#123;</span><br><span class="line">  <span class="attribute">border-bottom</span>: none <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br><span class="line">//去掉最下面的那一条线</span><br><span class="line"><span class="selector-class">.el-table</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.customer-table</span> <span class="selector-class">.el-table__fixed-right</span><span class="selector-pseudo">::before</span>,</span><br><span class="line"><span class="selector-class">.el-table__fixed</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">// 修改弹出框的样式</span><br><span class="line"><span class="selector-class">.el-dialog</span> &#123;</span><br><span class="line">  <span class="attribute">transform</span>: none;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.vue</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">// 这里是渲染全局的<span class="selector-tag">div</span>的滑动条的样式</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span>::-webkit-scrollbar &#123;</span><br><span class="line">  width: <span class="number">5px</span>; <span class="comment">/*高宽分别对应横竖滚动条的尺寸*/</span></span><br><span class="line">  <span class="attribute">height</span>: <span class="number">5px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span>::-webkit-scrollbar-thumb &#123;</span><br><span class="line">  /*滚动条里面小方块*/</span><br><span class="line">  border-radius: <span class="number">5px</span>;</span><br><span class="line">  -webkit-<span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="number">#011228</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.075</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span>::-webkit-scrollbar-track &#123;</span><br><span class="line">  /*滚动条里面轨道*/</span><br><span class="line">  -webkit-box-shadow: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="number">#011228</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#ececec</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="局部样式修改"><a href="#局部样式修改" class="headerlink" title="局部样式修改"></a>局部样式修改</h3><ul>
+<li><p><strong>这里要注意：</strong>如果是组件的样式就写到组件当中最好，因为组件存在重复利用的情况，本项目中由于PCS和BMS较多，所以导致大量组件的复用。</p>
+</li>
+<li><p>父组件中：写入整体样式css，来控制子组件和自定义的其他模块的样式组合在一起的结构和布局。</p>
+</li>
+<li><p>子组件中：单独写入本身子组件的样式，保证每一次复用都是相同的类型。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">@/views/dashboard/BMS.vue  </span><br><span class="line">// bms父组件中引用了树形子组件和dataView子组件</span><br><span class="line">// 由于父组件中没有多余的标签，所以style中只需要控制这两个子组件的布局样式即可</span><br><span class="line">&lt;div class=&quot;context&quot;&gt;</span><br><span class="line">    &lt;tree @handlePcs=&quot;handlePcs&quot;&gt;&lt;/tree&gt;</span><br><span class="line">    &lt;dataView</span><br><span class="line">      :objs=&quot;objs&quot;</span><br><span class="line">      :arr=&quot;arr&quot;</span><br><span class="line">      :table=&quot;table&quot;</span><br><span class="line">      :hisdata=&quot;hisdata&quot;</span><br><span class="line">    &gt;&lt;/dataView&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;style lang=&quot;scss&quot;&gt;</span><br><span class="line">.context &#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  flex-direction: row;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line">@/views/compoents/bmsindex.vue</span><br><span class="line">// bms的dataView组件，这个组件中引用了电池组件，所以在这个子组件中，它本身的子组件样式也不写在里面 </span><br><span class="line">// 这里依然是对其余三个部分的样式进行了编写 电池的样式还是放到了单独的组件中 </span><br><span class="line">&lt;div class=<span class="string">&quot;batterys&quot;</span>&gt;</span><br><span class="line">          &lt;batteryDemo&gt;&lt;/batteryDemo&gt;</span><br><span class="line">          &lt;batteryDemo&gt;&lt;/batteryDemo&gt;</span><br><span class="line">          &lt;batteryDemo&gt;&lt;/batteryDemo&gt;</span><br><span class="line">          &lt;batteryDemo&gt;&lt;/batteryDemo&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    .viewLeft &#123;</span><br><span class="line">  //  实时状态的<span class="selector-tag">div</span></span><br><span class="line">  <span class="selector-class">.timeStatus</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">740px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">405px</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#011126</span>;</span><br><span class="line">    // <span class="attribute">background</span>: white;</span><br><span class="line">    <span class="attribute">margin-top</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">margin-right</span>: <span class="number">20px</span>;</span><br><span class="line">    // 头部标题</span><br><span class="line">    <span class="selector-class">.header-1</span> &#123;</span><br><span class="line">      <span class="attribute">display</span>: inline-flex;</span><br><span class="line">      <span class="attribute">flex-direction</span>: row;</span><br><span class="line">      <span class="selector-class">.title</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">5px</span>;</span><br><span class="line">        <span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line">        <span class="attribute">display</span>: in;</span><br><span class="line">        <span class="attribute">background</span>: <span class="number">#35dbf8</span>;</span><br><span class="line">        <span class="attribute">margin-top</span>: <span class="number">20px</span>;</span><br><span class="line">        <span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line">        <span class="attribute">margin-right</span>: <span class="number">20px</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="selector-class">.title-1</span> &#123;</span><br><span class="line">        <span class="attribute">margin-top</span>: <span class="number">21px</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="selector-class">.content</span> &#123;</span><br><span class="line">        <span class="attribute">display</span>: inline-flex;</span><br><span class="line">        <span class="attribute">flex-direction</span>: row;</span><br><span class="line">        <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">        <span class="selector-class">.content-1</span> &#123;</span><br><span class="line">          <span class="attribute">margin-left</span>: <span class="number">50px</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.batterys</span> &#123;</span><br><span class="line">      <span class="attribute">height</span>: <span class="number">180px</span>;</span><br><span class="line">      <span class="attribute">display</span>: flex;</span><br><span class="line">      <span class="attribute">flex-direction</span>: row;</span><br><span class="line">      <span class="attribute">justify-content</span>: space-between;</span><br><span class="line">      <span class="attribute">margin-top</span>: <span class="number">18px</span>;</span><br><span class="line">      <span class="attribute">margin-left</span>: <span class="number">120px</span>;</span><br><span class="line">      <span class="attribute">margin-right</span>: <span class="number">80px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.introduce</span> &#123;</span><br><span class="line">      <span class="attribute">margin-top</span>: -<span class="number">5px</span>;</span><br><span class="line">      <span class="attribute">margin-left</span>: <span class="number">15px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.telemeter</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">740px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">405px</span>;</span><br><span class="line">    <span class="attribute">margin-top</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#011228</span>;</span><br><span class="line">    <span class="attribute">color</span>: white;</span><br><span class="line">    //   头部标题</span><br><span class="line">    <span class="selector-class">.header-2</span> &#123;</span><br><span class="line">      <span class="attribute">display</span>: inline-flex;</span><br><span class="line">      <span class="attribute">flex-direction</span>: row;</span><br><span class="line">      <span class="selector-class">.title</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">5px</span>;</span><br><span class="line">        <span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line">        <span class="attribute">display</span>: in;</span><br><span class="line">        <span class="attribute">background</span>: <span class="number">#35dbf8</span>;</span><br><span class="line">        <span class="attribute">margin-top</span>: <span class="number">20px</span>;</span><br><span class="line">        <span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line">        <span class="attribute">margin-right</span>: <span class="number">20px</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="selector-class">.title-2</span> &#123;</span><br><span class="line">        <span class="attribute">margin-top</span>: <span class="number">21px</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.table-edit</span> &#123;</span><br><span class="line">      <span class="attribute">margin-top</span>: <span class="number">20px</span>;</span><br><span class="line">      <span class="attribute">margin-left</span>: <span class="number">38px</span>;</span><br><span class="line">      <span class="attribute">height</span>: <span class="number">310px</span>;</span><br><span class="line">      <span class="attribute">width</span>: <span class="number">90%</span>;</span><br><span class="line">      <span class="attribute">overflow-y</span>: auto;</span><br><span class="line">      <span class="selector-tag">div</span>::-webkit-scrollbar &#123;</span><br><span class="line">        width: <span class="number">5px</span>; <span class="comment">/*高宽分别对应横竖滚动条的尺寸*/</span></span><br><span class="line">        <span class="attribute">height</span>: <span class="number">5px</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="selector-tag">div</span>::-webkit-scrollbar-thumb &#123;</span><br><span class="line">        /*滚动条里面小方块*/</span><br><span class="line">        border-radius: <span class="number">5px</span>;</span><br><span class="line">        -webkit-<span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="number">#011228</span>;</span><br><span class="line">        <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.075</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="selector-tag">div</span>::-webkit-scrollbar-track &#123;</span><br><span class="line">        /*滚动条里面轨道*/</span><br><span class="line">        -webkit-box-shadow: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="number">#011228</span>;</span><br><span class="line">        <span class="attribute">border-radius</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">background</span>: <span class="number">#ececec</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;style&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">@/views/battery/battery-group.vue</span><br><span class="line">// 这里先是渲染电池的样式的过程</span><br><span class="line">// 这里因为电池存在不同状态的标签 分开写的话 会导致样式重复 且可读性差</span><br><span class="line">// 所以都封装到这个组件中，dataView只需要直接引入这个组件就完成了第一个模块的编写</span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div class=&quot;container&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;battery&quot; :style=&quot;&#123; &#x27;--height&#x27;: height &#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line">    &lt;p style=&quot;margin-left: 14px&quot;&gt;电池簇1&lt;/p&gt;</span><br><span class="line">    &lt;p style=&quot;margin-left: 20px; color: green&quot;&gt;正常&lt;/p&gt;</span><br><span class="line">    &lt;p style=&quot;margin-left: 20px; color: red&quot;&gt;故障&lt;/p&gt;</span><br><span class="line">    &lt;p style=&quot;margin-left: 20px; color: yellow&quot;&gt;空闲&lt;/p&gt;</span><br><span class="line">    &lt;p style=&quot;margin-left: 20px; color: green&quot;&gt;远程&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      height: &quot;70%&quot;,</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;style lang=&quot;scss&quot;&gt;</span><br><span class="line">.container &#123;</span><br><span class="line">  position: relative;</span><br><span class="line">  width: 80px;</span><br><span class="line">  .battery &#123;</span><br><span class="line">    height: 140px;</span><br><span class="line">    box-sizing: border-box;</span><br><span class="line">    border-radius: 15px 15px 5px 5px;</span><br><span class="line">    border: 1px solid #fff;</span><br><span class="line">    filter: drop-shadow(0 1px 3px rgba(1, 1, 1));</span><br><span class="line">    z-index: -99;</span><br><span class="line">  &#125;</span><br><span class="line">  .battery::before &#123;</span><br><span class="line">    content: &quot;&quot;;</span><br><span class="line">    /*清除浮动*/</span><br><span class="line">    position: absolute;</span><br><span class="line">    width: 26px;</span><br><span class="line">    height: 10px;</span><br><span class="line">    top: 0;</span><br><span class="line">    left: 50%;</span><br><span class="line">    transform: translate(-50%, -10px);</span><br><span class="line">    border-radius: 5px 5px 0 0;</span><br><span class="line">    background: rgba(53, 219, 248, 0.88);</span><br><span class="line">  &#125;</span><br><span class="line">  .battery::after &#123;</span><br><span class="line">    content: &quot;&quot;;</span><br><span class="line">    position: absolute;</span><br><span class="line">    left: 0;</span><br><span class="line">    right: 0;</span><br><span class="line">    bottom: 0;</span><br><span class="line">    top: var(--height);</span><br><span class="line">    background: linear-gradient(to top, #36efb2, #1daade);</span><br><span class="line">    border-radius: 0px 0px 5px 5px;</span><br><span class="line">    box-shadow: 0 14px 28px rgba(33, 150, 243, 0),</span><br><span class="line">      0 10px 10px rgba(9, 188, 215, 0.08);</span><br><span class="line">    animation: charging 4s linear infinite;</span><br><span class="line">  &#125;</span><br><span class="line">  @keyframes charging &#123;</span><br><span class="line">    0% &#123;</span><br><span class="line">      top: 100%;</span><br><span class="line">      box-shadow: 0 14px 28px rgba(0, 150, 136, 0.83),</span><br><span class="line">        0px 4px 10px rgba(9, 188, 215, 0.4);</span><br><span class="line">    &#125;</span><br><span class="line">    50% &#123;</span><br><span class="line">      top: var(--height);</span><br><span class="line">      border-radius: 0 0 5px 5px;</span><br><span class="line">      box-shadow: 0 14px 28px rgba(4, 188, 213, 0.2),</span><br><span class="line">        0 10px 10px rgba(9, 188, 215, 0.08);</span><br><span class="line">    &#125;</span><br><span class="line">    100% &#123;</span><br><span class="line">      top: var(--height);</span><br><span class="line">      border-radius: 0px 0px 5px 5px;</span><br><span class="line">      box-shadow: 0 14px 28px rgba(4, 188, 213, 0),</span><br><span class="line">        0 10px 10px rgba(9, 188, 215, 0.4);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：Vue-element-admin查漏补缺</li>
+        <li>Post author：iam_Echo</li>
+        <li>Create time：2021-12-10 09:37:00</li>
+        <li>
+            Post link：https://hurryliwei.github.io/2021/12/10/Vue-element-admin查漏补缺/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2021/11/03/%E6%99%BA%E6%85%A7%E5%A4%A7%E5%B1%8F%E6%A1%88%E4%BE%8B%E6%B1%87%E6%80%BB/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">智慧大屏案例汇总</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;Comments</i>
+    </div>
+    
+
+        
+            
+    <div class="valine-container">
+        <script 
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+        <div id="vcomments"></div>
+        <script >
+            function loadValine() {
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'QUxpNcJdPriNR5IPsdvNBVAS-gzGzoHsz',
+                    appKey: 'iau4kX9v3NAQ22FqzYxy9lmA',
+                    meta: ['nick', 'mail', 'link'],
+                    avatar: 'wavatar',
+                    enableQQ: true,
+                    placeholder: '',
+                    lang: 'en'.toLowerCase()
+                });
+
+                function getAuthor(language) {
+                    switch (language) {
+                        case 'en':
+                            return 'Author';
+                        case 'zh-CN':
+                            return '博主';
+                        default:
+                            return 'Master';
+                    }
+                }
+
+                // Add "Author" identify
+                const getValineDomTimer = setInterval(() => {
+                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                    if (vcards.length > 0) {
+                        let author = 'iam_Echo';
+
+                        if (author) {
+                            for (let vcard of vcards) {
+                                const vnick_dom = vcard.querySelector('.vhead .vnick');
+                                const vnick = vnick_dom.innerHTML;
+                                if (vnick === author) {
+                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
+                                }
+                            }
+                        }
+                        clearInterval(getValineDomTimer);
+                    } else {
+                        clearInterval(getValineDomTimer);
+                    }
+                }, 2000);
+            }
+
+            if ('false') {
+                const loadValineTimeout = setTimeout(() => {
+                    loadValine();
+                    clearTimeout(loadValineTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadValine);
+            }
+        </script>
+    </div>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2021&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">iam_Echo</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.3</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8EVue-element-admin%E7%9A%84%E8%A1%A5%E5%85%85"><span class="nav-text">关于Vue-element-admin的补充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8EtagView%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">关于tagView的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tagView%E7%9A%84Vuex%E5%88%86%E6%9E%90"><span class="nav-text">tagView的Vuex分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ES6%E7%9A%84%E8%AF%AD%E6%B3%95%E5%92%8C%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="nav-text">ES6的语法和知识点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%98%E9%87%8F%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC%EF%BC%9A"><span class="nav-text">变量解构赋值：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B7%E5%BC%8F%E6%9B%B4%E6%94%B9"><span class="nav-text">样式更改</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E6%A0%B7%E5%BC%8F%E4%BF%AE%E6%94%B9"><span class="nav-text">全局样式修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%80%E9%83%A8%E6%A0%B7%E5%BC%8F%E4%BF%AE%E6%94%B9"><span class="nav-text">局部样式修改</span></a></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/code-copy.js"></script>
+
+
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
+    
+</div>
+
+
+
+</body>
+</html>
